@@ -47,9 +47,3 @@ var Chart1 = new Chart(cht1, {
   }
 });
 
-cht1.on("click", function (evt) {
-  var activePoints = Chart1.getElementAtEvent(evt);
-  console.log(activePoints);
-  let task = data.tasks[activePoints[0]._index];
-  lib.showDialog(task);
-});
